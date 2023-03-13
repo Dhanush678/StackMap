@@ -1,0 +1,287 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F9A9999"
+    tools:context="com.example.basicfragment.c">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/card"
+            android:backgroundTint="#6F9A9999"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:text="Structures"
+                android:fontFamily="@font/basic"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textSize="20dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/card"
+            android:backgroundTint="#6F9A9999"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/basic"
+                android:text="In C programming, a structure is a user-defined data type that groups related data items of different data types. It allows you to create a new data type that contains multiple variables of different data types.
+In C programming, a structure is a user-defined data type that allows you to combine different data types into a single variable. A structure is declared using the struct keyword and consists of one or more members, which can be of different data types. Here is an example of a structure declaration:
+
+"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:text="struct student {\n
+
+    int id;\n
+    char name[50];\n
+    float marks;\n
+};"
+                android:fontFamily="@font/basic"
+                android:textSize="20dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/card"
+            android:backgroundTint="#6F9A9999"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:text="In this example, we have declared a structure called student with three members: id of type int, name of type char array with a maximum length of 50 characters, and marks of type float.
+
+To create a variable of this structure type, you can use the following syntax:"
+                android:fontFamily="@font/basic"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:background="@color/black">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:text="struct student s;\n
+s.id = 1;\n
+strcpy(s.age,10);\n
+s.marks = 95.5;\n"
+                android:fontFamily="@font/basic"
+                android:textSize="20dp">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/card"
+            android:backgroundTint="#6F9A9999"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:text="Implementation of Structures"
+                android:fontFamily="@font/basic"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textSize="20dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:background="@color/black">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:text="
+
+void main(){\n
+struct record\n
+ {
+int usn;
+\n
+char name[10];\n
+float grade;\n
+
+/* data */\n};
+struct record student;\n
+printf(“ enter the details“\n);\n
+printf(“enter the usn:“);\n
+scanf(“%d“,student.usn);\n
+printf(“enter the name:“);\n
+scanf(“%s“,student.name);\n
+printf(“enter the grade:“);\n
+scanf(“%f“,student.grade);\n
+printf(“printing details“);\n
+ printf(“name:%s “,student.name);\n
+printf(“name:%d“,student.usn);\n
+printf(“name:%f “,student.grade56);\n
+                }"
+                android:fontFamily="@font/basic"
+                android:textSize="20dp">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/card"
+            android:backgroundTint="#6F9A9999"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:text="Pointers"
+                android:fontFamily="@font/basic"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textSize="20dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/card"
+            android:backgroundTint="#6F9A9999"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/basic"
+                android:text="In C programming, a pointer is a variable that stores the memory address of another variable. Pointers are useful for accessing and manipulating memory directly, which can be especially useful when working with arrays, strings, and dynamically allocated memory.
+
+To declare a pointer in C, you use the * operator before the variable name. For example:"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:background="@color/black">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:text="int *ptr;\n
+int num = 10;//use Ampersand in RHS\n
+int *ptr = num;\n
+printf(“%d“, *ptr); \n"
+                android:fontFamily="@font/basic"
+                android:textSize="20dp">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+</FrameLayout>

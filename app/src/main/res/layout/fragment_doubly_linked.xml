@@ -1,0 +1,446 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F9A9999"
+    tools:context="com.example.stackmap.linkedlist">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="Doubly  Linked List"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="A doubly linked list is a type of linked list where each node contains two pointers, one pointing to the previous node and one pointing to the next node. This allows for traversal of the list in both directions. Here's an example of what a doubly linked list might look like:"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="typedef struct node {\n
+    int data;\n
+    struct node *next;\n
+    struct node *prev;\n
+} Node;\n
+
+typedef struct doubly_linked_list {\n
+    Node *head;\n
+    Node *tail;\n
+    int size;\n
+} DoublyLinkedList;\n"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black"/>
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:paddingStart="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/doubly">
+
+            </ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="C Program for Doubly Linked List"
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="In this implementation, the doubly linked list is defined using a structure that contains a head pointer, a tail pointer, and a size variable. The add_node function adds a new node to the end of the list, and the `"
+                    android:textAlignment="textStart"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="void initialize_list(DoublyLinkedList *list) {
+    list->head = NULL;\n\n
+    list->tail = NULL;\n
+    list->size = 0;\n
+}
+
+int main() {
+    DoublyLinkedList list;\n
+    initialize_list(list);\n
+    add_node(list, 1);\n
+    add_node(list, 2);\n
+    add_node(list, 3);\n
+    add_node(list, 4);\n
+    add_node(list, 5);\n
+    printf(“Initial list: “);\n
+    print_list(list);\n
+    remove_node(list, 3);\n
+    printf(“List after removing node with data 3: “);\n
+                print_list(list);\n
+                return 0;\n
+                }
+                "
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Insertions"
+
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="void insertStart (struct Node **head, int data)
+{
+  struct Node *newNode = (struct Node *) malloc (sizeof (struct Node));\n
+  newNode->data = data;\n
+  newNode->next = *head;\n
+  newNode->prev = NULL;\n
+  if (*head != NULL)
+    (*head)->prev = newNode;\n
+  *head = newNode;\n
+}\n
+void insertStart (struct Node **head, int data)\n
+{\n
+  struct Node *newNode = (struct Node *) malloc (sizeof (struct Node));\n
+  newNode->data = data;\n
+  newNode->next = *head;\n
+  newNode->prev = NULL;\n
+  if (*head != NULL)\n
+    (*head)->prev = newNode;\n
+  *head = newNode;\n
+}\n
+void insertPosition (int pos, int data, struct Node **head)\n
+{\n
+  int size = calcSize (*head);\n
+  if (pos less than 1 || size less than pos)\n
+    {\n
+      printf (“Can't insert, %d is not a valid position\n“, pos);\n
+    }\n
+  else\n
+    {\n
+      struct Node *temp = *head;\n
+      struct Node *newNode = (struct Node *) malloc (sizeof (struct Node));\n
+
+      newNode->data = data;\n
+      newNode->next = NULL;\n
+      while (--pos)\n
+	{\n
+	  temp = temp->next;\n
+	}\n
+      newNode->next = temp->next;\n
+      newNode->prev = temp;\n
+      temp->next = newNode;\n
+    }\n
+}\n
+"
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Deletion"
+
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="void deleteFirst()\n
+{\n
+    struct node* temp\n
+    if (start == NULL)\n
+        printf(“List is empty“)\n
+                else {\n
+                temp = start\n
+                start = start->next\n
+                if (start != NULL)\n
+                start->prev = NULL\n
+                free(temp)\n\n
+                }}\n
+                void deleteEnd()\n
+                {\n
+                struct node* temp\n
+                if (start == NULL)\n
+                printf(“List is empty“)\n\n
+                temp = start\n
+                while (temp->next != NULL)\n
+                temp = temp->next\n
+                if (start->next == NULL)\n
+                start = NULL\n
+                else {\n
+                temp->prev->next = NULL\n
+                free(temp)\n
+                }}\n
+                void deletePosition()\n
+                {\n
+                int pos, i = 1\n
+                struct node *temp, *position\n
+                temp = start\n
+                if (start == NULL)\n
+                printf(“List is empty“)\n\n
+
+                else {\n
+                printf(“\nEnter position : “)\n\n
+                scanf(“%d“, pos)\n\n
+
+                if (pos == 1)\n {\n
+                deleteFirst()\n
+                start->prev = NULL\n
+                }\n
+                free(position)\n\n
+                return\n
+                }\n
+                while (i less than pos - 1)\n {\n
+                temp = temp->next\n
+                i++\n
+                }\n
+                position = temp->next\n
+                if (position->next != NULL)\n
+                position->next->prev = temp\n
+                temp->next = position->next\n
+                free(position)\n\n
+                }\n
+                }\n"
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="The advantages of a doubly linked list over a singly linked list are that it allows for traversal of the list in both directions, and it allows for more efficient deletion of a node, as the previous node can be easily updated to point to the next node after deletion. However, a doubly linked list requires more memory than a singly linked list, as each node contains two pointers instead of one."
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                android:baselineAligned="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+</FrameLayout>

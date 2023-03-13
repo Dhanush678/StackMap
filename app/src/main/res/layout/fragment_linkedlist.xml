@@ -1,0 +1,558 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F9A9999"
+    tools:context="com.example.stackmap.linkedlist">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:text="Linear Linked List"
+                    android:fontFamily="@font/basic"
+                    android:textColor="@color/white"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="In C programming language, a linked list is a data structure consisting of a sequence of nodes, each containing an element of data and a pointer to the next node in the sequence. The first node is called the head, and the last node is called the tail. A linked list can be used to implement various abstract data types such as a stack, queue, and associative array.
+
+A linked list in C can be implemented using a struct to define the node, which contains two fields: the data field and the pointer field. The data field can be any data type, depending on the application. The pointer field contains the memory address of the next node in the sequence. The last node in the sequence has a null pointer in the pointer field.
+
+Here is an example struct for a linked list node:"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:text="struct Node {\n
+    int data;\n
+    struct Node* next;\n
+};"
+                    android:fontFamily="@font/basic"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:text="struct Node {\n
+    int data;\n
+    struct Node* next;\n
+};"
+                    android:fontFamily="@font/basic"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/linkedlist">
+
+</ImageView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Singly linked list or One way chain"
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Singly linked list can be defined as the collection of ordered set of elements. The number of elements may vary according to need of the program. A node in the singly linked list consist of two parts: data part and link part. Data part of the node stores actual information that is to be represented by the node while the link part of the node stores the address of its immediate successor."
+                    android:textAlignment="textStart"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/linkedimage">
+
+            </ImageView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:text="// Declare a node struct\n
+struct Node {\n
+    int data;\n
+    struct Node* next;\n
+};\n
+
+int main() {\n
+    // Create a linked list with three nodes\n
+    struct Node* head = NULL;\n
+    struct Node* second = NULL;\n
+    struct Node* third = NULL;\n
+
+    head = (struct Node*)malloc(sizeof(struct Node));\n
+    second = (struct Node*)malloc(sizeof(struct Node));\n
+    third = (struct Node*)malloc(sizeof(struct Node));\n
+
+    // Assign values to the nodes and link them together\n
+    head->data = 1;\n
+    head->next = second;\n
+    second->data = 2;\n
+    second->next = third;\n
+    third->data = 3;\n
+    third->next = NULL;\n
+
+    // Traverse the linked list and print its contents\n
+    struct Node* current = head;\n
+    while (current != NULL) {\n
+        printf(“%d “, current->data);\n
+                current = current->next;\n
+                }\n
+
+                return 0;\n
+                }\n
+                "
+                    android:fontFamily="@font/basic"
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Insertions"
+
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:text="void beginsert()\n
+{\n
+    struct node *ptr;\n
+    int item;\n
+    ptr = (struct node *) malloc(sizeof(struct node *));\n
+    if(ptr == NULL)\n
+    {
+        printf(“OVERFLOW“);\n
+                }\n
+                else\n
+                {\n
+                printf(“\nEnter value\n“);\n
+                scanf(“%d“,item);\n
+                ptr->data = item;\n
+                ptr->next = head;\n
+                head = ptr;\n
+                printf(“Node inserted“);\n
+                }\n
+
+                }\n
+                void lastinsert()\n
+                {\n
+                struct node *ptr,*temp;\n
+                int item;\n
+                ptr = (struct node*)malloc(sizeof(struct node));\n
+                if(ptr == NULL)\n
+                {\n
+                printf(“OVERFLOW“);\n
+                }\n
+                else\n
+                {\n
+                printf(“Enter value?“);\n
+                scanf(“%d“,item);\n
+                ptr->data = item;\n
+                if(head == NULL)\n
+                {\n
+                ptr -> next = NULL;\n
+                head = ptr;\n
+                printf(“Node inserted“);\n
+                }\n
+                else\n
+                {\n
+                temp = head;\n
+                while (temp -> next != NULL)\n
+                {\n
+                temp = temp -> next;\n
+                }\n
+                temp->next = ptr;\n
+                ptr->next = NULL;\n
+                printf(“Node inserted“);\n
+
+                }}}\n
+                void randominsert()\n
+                {
+                int i,loc,item;\n
+                struct node *ptr, *temp;\n
+                ptr = (struct node *) malloc (sizeof(struct node));\n
+                if(ptr == NULL)\n
+                {\n
+                printf(“OVERFLOW“);\n
+                }\n
+                else\n
+                {\n
+                printf(“Enter element value“);\n
+                scanf(“%d“,item);\n
+                ptr->data = item;\n
+                printf(“Enter the location after which you want to insert “);\n
+                scanf(“%d“,loc);\n
+                temp=head;\n
+                for(i=0;i(less than)loc;i++)\n
+
+                {\n
+                temp = temp->next;\n
+                if(temp == NULL)\n
+                {\n
+                printf(“can't insert“);\n
+                return;\n
+                }
+
+                }
+                ptr ->next = temp ->next;\n
+                temp ->next = ptr;\n
+                printf(“Node inserted“);
+                }}
+                  "
+                    android:fontFamily="@font/basic"
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Deletion"
+
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:text="\nvoid begin_delete()
+{  \n
+    struct node *ptr;   \n
+    if(head == NULL)   \n
+    {   \n
+        printf(“List is empty“); \n
+                } \n
+                else \n
+                { \n
+                ptr = head; \n
+                head = ptr->next; \n
+                free(ptr); \n
+                printf(“Node deleted from the begining ...“); \n
+                } \n
+                } \n
+                void last_delete() \n
+                { \n
+                struct node *ptr,*ptr1; \n
+                if(head == NULL) \n
+                { \n
+                printf(“list is empty“); \n
+                }
+                else if(head -> next == NULL)
+                {\n
+                head = NULL;\n
+                free(head);\n
+                printf(“Only node of the list deleted ...“);\n
+                }\n
+
+                else\n
+                {\n
+                ptr = head;\n
+                while(ptr->next != NULL)\n
+                {\n
+                ptr1 = ptr;\n
+                ptr = ptr ->next;\n
+                }\n
+                ptr1->next = NULL;\n
+                free(ptr);\n
+                printf(“Deleted Node from the last ...“);\n
+                }\n
+                }\n\n
+                void random_delete()\n
+                {\n
+                struct node *ptr,*ptr1;\n
+                int loc,i;\n
+                printf(“Enter the location of the node after which you want to perform deletion “);\n
+                scanf(“%d“,loc);\n
+                ptr=head;\n
+                for(i=0;i(less than)loc;i++)\n
+                {\n
+                ptr1 = ptr;\n
+                ptr = ptr->next;\n
+
+                if(ptr == NULL)\n
+                {\n
+                printf(“Can't delete“);\n
+                return;\n
+                }\n
+                }\n
+                ptr1 ->next = ptr ->next;\n
+                free(ptr);\n
+                printf(“Deleted node %d “,loc+1);\n
+                }\n
+                void search()\n
+                {\n
+                struct node *ptr;\n
+                int item,i=0,flag;\n
+                ptr = head;\n
+                if(ptr == NULL)\n
+                {\n
+                printf(“Empty List“);\n
+                }\n
+                else\n
+                {\n
+                printf(“Enter item which you want to search?“);\n
+                scanf(“%d“,item);\n
+                while (ptr!=NULL)\n
+                {\n
+                if(ptr->data == item)\n
+                {\n
+                printf(“item found at location %d “,i+1);\n
+                flag=0;\n
+                }\n
+                else\n
+                {\n
+                flag=1;\n
+                }\n
+                i++;\n
+                ptr = ptr -> next;\n
+                }\n
+                if(flag==1)\n
+                {\n
+                printf(“Item not found\n“);\n
+                }\n
+                }\n
+
+                }  "
+                    android:fontFamily="@font/basic"
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:text="This program creates a linked list with three nodes, assigns integer values to each node, links the nodes together, and then traverses the linked list and prints its contents."
+                    android:fontFamily="@font/basic"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+</FrameLayout>

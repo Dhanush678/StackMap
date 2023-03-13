@@ -1,0 +1,464 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F9A9999"
+    tools:context="com.example.stackmap.linkedlist">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="Circular Linked List"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="A circular linked list is a type of linked list where the last node of the list points back to the first node, forming a loop or circle. In other words, the next pointer of the last node points to the first node, rather than to NULL as in a traditional singly linked list.
+
+Like a singly linked list, each node in a circular linked list contains two fields: a data field to store the node's data, and a next field to store a reference to the next node in the list. The only difference is that the last node in the list points back to the first node, creating a circular structure."
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="typedef struct node {\n
+    int data;\n
+    struct node *next;\n
+} Node;\n"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="typedef struct circular_linked_list {\n
+    Node *head;\n
+    int size;\n
+} CircularLinkedList;\n"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@drawable/circu">
+
+            </ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="C Program for Circular Linked List"
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="In this implementation, the circular linked list is defined using a structure that contains a head pointer and a size variable. The add_node function adds a new node to the end of the list, and the remove_node function removes a node with the specified data from the list. The print_list function prints the contents of the list. The initialize_list function initializes the list by setting the head pointer to NULL and the size to 0.
+
+Note that in this implementation, the circular linked list is implemented using a singly"
+                    android:textAlignment="textStart"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="void initialize_list(CircularLinkedList *list) {\n
+    list->head = NULL;\n
+    list->size = 0;\n
+}\n
+int main() {\n
+    CircularLinkedList list;\n
+    initialize_list(list);\n
+    add_node(list, 1);\n
+    add_node(list, 2);\n
+    add_node(list, 3);\n
+    add_node(list, 4);\n
+    add_node(list, 5);\n
+    printf(“Initial list: “);\n
+    print_list(list);\n
+    remove_node(list, 3);\n
+    printf(“List after removing node with data 3: “);\n
+                print_list(list);\n
+                return 0;\n
+
+"
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Insertions"
+
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="void insertAtFront(int data)
+{
+    // Initialize a new node\n
+    struct node* temp;\n
+    temp = (struct node*)malloc(sizeof(struct node));\n
+
+        temp->info = data;\n
+        temp->next = temp;\n
+        last = temp;\n
+    }
+\n
+    else {\n
+        temp->info = data;\n
+        temp->next = last->next\n
+        last->next = temp;\n
+    }\n
+}
+void addatlast(int data)\n
+{\n
+    // Initialize a new node\n
+    struct node* temp;\n
+    temp = (struct node*)malloc(sizeof(struct node));\n
+    if (last == NULL) {\n
+        temp->info = data;\n
+        temp->next = temp;\n
+        last = temp;\n
+    }\n
+    else {\n
+        temp->info = data;\n
+        temp->next = last->next;\n
+        last->next = temp;\n
+        last = temp;\n
+    }\n
+    
+}
+void insertpos()\n
+{\n
+    int data, value;\n
+    struct node *temp, *n;\n
+    printf(“Enter number after which“
+                “ you want to enter number:“);\n
+                scanf(“%d“, value);\n
+                temp = last->next;\n
+                do {\n
+                if (temp->info == value) {\n
+                n = (struct node*)malloc(sizeof(struct node));\n
+                printf(“Enter data to be“
+                “ inserted : “);\n
+                scanf(“%d“, data);\n
+                n->info = data;\n
+                n->next = temp->next;\n
+                temp->next = n;\n
+                if (temp == last)\n
+                last = n;\n
+                break;\n
+                }\n
+                else\n
+                temp = temp->next;\n
+                } while (temp != last->next);\n
+                }"
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Deletion"
+
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="void deletefirst()\n
+{\n
+    struct node* temp;\n
+      if (last == NULL)\n
+        printf(“List is empty.“);\n
+                else {\n
+                temp = last->next;\n
+                last->next = temp->next;\n
+                free(temp);\n
+                }\n
+                }\n
+
+                void addatlast(int data)\n
+                {\n
+                struct node* temp;\n
+                temp = (struct node*)malloc(sizeof(struct node));\n
+                if (last == NULL) {\n
+                temp->info = data;\n
+                temp->next = temp;\n
+                last = temp;\n
+                }\n
+                else {\n
+                temp->info = data;\n
+                temp->next = last->next;\n
+                last->next = temp;\n
+                last = temp;\n
+                }\n
+                }\n
+                void deleteAtIndex()\n
+                {\n
+                int pos, i = 1;\n
+                struct node *temp, *position;\n
+                temp = last->next;\n
+
+                if (last == NULL)\n
+                printf(“List is empty.“);\n
+                else {\n
+                printf(“Enter index : “);\n
+                scanf(“%d“, pos);\n
+                while (i less than pos ) {\n
+                temp = temp->next;\n
+                i++;\n
+                }\n
+                position = temp->next;\n
+                temp->next = position->next;\n
+
+                free(position);\n
+                }\n
+                }\n"
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="Circular linked lists can be used in many applications, such as implementing a round-robin scheduling algorithm or implementing a circular buffer data structure. However, they can be slightly more complex to implement and manipulate compared to a traditional singly linked list, since operations such as insertion and deletion require updating pointers to maintain the circular structure."
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                android:baselineAligned="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+</FrameLayout>
