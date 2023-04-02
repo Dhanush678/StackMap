@@ -10,35 +10,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:paddingStart="20dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/border_xml"
-        android:backgroundTint="#6F9A9999"
 
-        android:padding="20dp"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/andika_new_basic"
-
-            android:text="Data Structures"
-            android:textColor="@color/white"
-
-            android:textSize="20dp">
-
-        </TextView>
-    </androidx.cardview.widget.CardView>
 
 
     <androidx.recyclerview.widget.RecyclerView

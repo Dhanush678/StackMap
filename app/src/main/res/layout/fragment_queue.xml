@@ -1,0 +1,475 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F9A9999"
+    tools:context="com.example.stackmap.queue">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="Linear Queue"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="A linear queue is a data structure in computer science that follows the First-In-First-Out (FIFO) principle. It is a simple queue implementation that uses a fixed-size array to store elements, and two pointers to keep track of the front and rear elements of the queue.
+
+In a linear queue, elements are inserted at the rear end of the queue and removed from the front end of the queue. The front pointer points to the first element in the queue, while the rear pointer points to the last element in the queue. Initially, both pointers point to -1, indicating that the queue is empty."
+
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="int front = -1, rear = -1;\n
+int queue[MAX_SIZE];\n"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black"/>
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:paddingStart="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/queueimage">
+
+            </ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Implementation of Linear Queue"
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="here's an example implementation of a linear queue in C:"
+                    android:textAlignment="textStart"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="int main() {
+    enqueue(10);\n
+    enqueue(20);\n
+    enqueue(30);\n
+    display();\n
+    dequeue();\n
+    display();\n
+    return 0;\n
+}"
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Enqueue"
+
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="In the enqueue function, we first check if the queue is full. If it is, we print an error message and return. Otherwise, we increment rear and add the element to the queue array at the rear index."
+
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="void enqueue(int item) {\n
+    if (rear == MAX_SIZE - 1) {\n
+        printf(“Queue Overflow“);\n
+                return;\n
+                }\n
+                if (front == -1) {\n
+                front = 0;\n
+                }\n
+                rear++;\n
+                queue[rear] = item;\n
+                printf(“%d enqueued to queue“, item);\n
+                }\n"
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Dequeue"
+
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="In the dequeue function, we first check if the queue is empty. If it is, we print an error message and return -1. Otherwise, we remove the element at the front index and increment front."
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="int dequeue() {\n
+    if (front == -1 || front > rear) {\n
+        printf(“Queue Underflow\n“);\n
+                return -1;\n
+                }\n
+                int item = queue[front];\n
+                front++;\n
+                printf(“%d dequeued from queue“, item);\n
+                return item;\n
+                }\n"
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Display"
+
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="In the display function, we first check if the queue is empty. If it is, we print an error message and return. Otherwise, we loop through the queue array from front to rear and print each element."
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="void display() {\n
+    if (front == -1) {\n
+        printf(“Queue is empty“);\n
+                return;\n
+                }\n
+                printf(“Queue elements are: “);\n
+                for (int i = front; i less than rear; i++) {\n
+                printf(“%d “, queue[i]);\n
+                }\n
+                }\n"
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="In the display function, we first check if the queue is empty. If it is, we print an error message and return. Otherwise, we loop through the queue array from front to rear and print each element."
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                android:baselineAligned="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+</FrameLayout>

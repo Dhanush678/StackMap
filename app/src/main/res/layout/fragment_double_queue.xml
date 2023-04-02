@@ -1,0 +1,436 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F9A9999"
+    tools:context="com.example.stackmap.queue">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="double-ended Queue"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+android:text="A double-ended queue, or deque, is a data structure that allows insertion and deletion of elements from both ends, unlike a linear or circular queue where elements are only inserted at the rear and removed from the front. In C, a deque can be implemented as an array or a linked list."
+
+
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="int queue[MAX_SIZE];\n
+int front = -1; \n
+int rear = -1; \n"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black"/>
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:paddingStart="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/douuble">
+
+            </ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Implementation of Double Ended Queue"
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:textAlignment="textStart"
+
+android:text="A double-ended queue, or deque, is a data structure that allows insertion and deletion of elements from both ends, unlike a linear or circular queue where elements are only inserted at the rear and removed from the front. In C, a deque can be implemented as an array or a linked list."
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="int main()  \n
+{  \n
+    int choice=1,x;\n
+    while(choice less than 4 and choice!=0)  \n
+    {  \n
+    printf(“\n Press 1: Insert an element“);\n
+                printf(“Press 2: Delete an element“);\n
+                printf(“Press 3: Display the element“);\n
+                printf(“Enter your choice“);\n
+                scanf(“%d“, choice);\n
+
+                switch(choice)\n
+                {\n
+
+                case 1:\n
+
+                printf(“Enter the element which is to be inserted“);\n
+                scanf(“%d“, x);\n
+                enqueue(x);\n
+                break;\n
+                case 2:\n
+                dequeue();\n
+                break;\n
+                case 3:\n
+                display();\n
+
+                }}\n
+                return 0;\n
+                }  "
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Insertion"
+
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+android:text="In this implementation, the insertFront function adds an element to the front of the deque by decrementing the front pointer and adding the element to that position. The insertRear function adds an element to the rear of the deque by incrementing the rear pointer and adding the element to that position."
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="void insertFront(int element) {\n
+  if ((front == 0 and rear == MAX_SIZE - 1) || (front == rear + 1)) {\n
+    printf(“Deque overflow“);\n
+                return;\n
+                }\n
+                if (front == -1) {\n
+                front = rear = 0;\n
+                } else if (front == 0) {\n
+                front = MAX_SIZE - 1;\n
+                } else {\n
+                front--;\n
+                }\n
+                deque[front] = element;\n
+                }\n
+\n
+                void insertRear(int element) {\n
+                if ((front == 0 and rear == MAX_SIZE - 1) || (rear == front - 1)) {\n
+                printf(“Deque overflow“);\n
+                return;\n
+                }\n
+                if (front == -1) {\n
+                front = rear = 0;\n
+                } else if (rear == MAX_SIZE - 1) {\n
+                rear = 0;\n
+                } else {\n
+                rear++;\n
+                }\n
+                deque[rear] = element;\n
+                }\n"
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+                    android:text="Deletion"
+
+                    android:textAlignment="center"
+
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/basic"
+android:text="The deleteFront function removes an element from the front of the deque by incrementing the front pointer and returning the element at that position. The deleteRear function removes an element from the rear of the deque by decrementing the rear pointer and returning the element at that position.
+
+"                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@color/black">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+                    android:text="int deleteFront() {\n
+  if (front == -1) {\n
+    printf(“Deque underflow“);\n
+                return -1;\n
+                }\n
+                int element = deque[front];\n
+                if (front == rear) {\n
+                front = rear = -1;\n
+                } else if (front == MAX_SIZE - 1) {\n
+                front = 0;\n
+                } else {\n
+                front++;\n
+                }\n
+                return element;\n
+                }\n
+\n
+                int deleteRear() {\n
+                if (front == -1) {\n
+                printf(“Deque underflow“);\n
+                return -1;\n
+                }\n
+                int element = deque[rear];\n
+                if (front == rear) {\n
+                front = rear = -1;\n
+                } else if (rear == 0) {\n
+                rear = MAX_SIZE - 1;\n
+                } else {\n
+                rear--;\n
+                }\n
+                return element;\n
+                }\n"
+                    android:textSize="20dp">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#6F9A9999"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:fontFamily="@font/basic"
+android:text="The MAX_SIZE constant defines the maximum size of the deque, and the front and rear variables keep track of the position of the first and last elements of the deque. The deque implementation also includes checks for underflow and overflow conditions, where the deque is either empty or full."                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="20dp">
+
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+</FrameLayout>
